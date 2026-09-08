@@ -150,7 +150,7 @@ function discordProviderConfig() {
     userInfoUrl: "https://discord.com/api/users/@me",
     // `guilds` is required by GET /users/@me/guilds. Existing Discord
     // authorizations must be revoked and recreated after changing this list.
-    scopes: ["identify", "email", "guilds"],
+    scopes: ["identify", "guilds"],
     authorizationUrlParams: { prompt: "consent" },
     redirectURI:
       "https://vexon-bot.vercel.app/api/auth/oauth2/callback/discord",
